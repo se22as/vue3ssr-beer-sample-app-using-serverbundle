@@ -1,0 +1,1 @@
+web: node -p $PORT dist/server/serverBundle.js 
