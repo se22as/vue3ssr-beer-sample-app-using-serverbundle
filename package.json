@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf ./dist && npm run build:client && npm run build:server",
+    "build": "cross-env PORT=$PORT rm -rf ./dist && npm run build:client && npm run build:server",
     "build:client": "vue-cli-service build",
     "build:server": "cross-env SSR=1 vue-cli-service build",
-    "start": " node dist/server/serverBundle.js",
+    "start": "node -p $PORT dist/server/serverBundle.js",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
