@@ -1,1 +1,1 @@
-web: node -p $PORT dist/server/serverBundle.js 
+web: node -port $PORT dist/server/serverBundle.js 
