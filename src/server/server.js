@@ -65,7 +65,7 @@ server.get('*', async (req, res) => {
   });
 });
 
-const port = process.env.PORT ? process.env.PORT : 8080;
+const port = process.env.PORT || 80;
 server.listen(port, () => {
   console.log(`Application is accesssible on : http://localhost:${port}`);
 });
