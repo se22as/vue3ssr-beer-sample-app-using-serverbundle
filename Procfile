@@ -1,7 +1,9 @@
+
+echo "-----------------------------------------------" 
 echo "$PORT = " 
 echo $PORT
-
 echo "$process.env.PORT = " 
 echo $process.env.PORT
+echo "-----------------------------------------------" 
 
-web: node -port $process.env.PORT dist/server/serverBundle.js 
+web: node dist/server/serverBundle.js 
